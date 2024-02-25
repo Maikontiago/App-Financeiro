@@ -157,7 +157,7 @@ i {
   text-align: center;
 }
 
-@media  screen and (max-width: 456px) {
+@media  screen and (min-width: 320px) and g(max-width: 456px) {
   .app>div {
     width: 120px;
   }
