@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="./styles/style.css" rel="stylesheet">
+  <script src="./js/app.js" defer></script>
+  <title>App Financeiro</title>
+</head>
+<body>
+  <main>
+    <div>
+      <h1>Controle Financeiro</h1>
+    </div>
+  <div class="app">
+    <div class="divIncomes">
+      Entrada: R$
+      <span class="incomes">00</span>
+    </div>
+    <div class="divTotal">
+      Total: R$
+      <span class="total">00</span>
+    </div>
+    <div class="divExpenses">
+      Saída: R$
+      <span class="expenses">00</span>
+    </div>
+  </div>
+    <div class="newItem">
+      <div class="divDesc">
+        <label for="desc">Descrição</label>
+        <input class="desc" type="text">
+      </div>
+      <div class="divAmount">
+        <label for="amount">Valor</label>
+        <input class="amount" type="number">
+      </div>
+      <div class="divType">
+        <label for="type">Tipo</label>
+        <select class="type">
+          <option class="opIncomes">Entrada</option>
+          <option class="opExpenses">Saida</option>
+        </select>
+      </div>
+      <button class="btnIn">Incluir</button>
+    </div>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th class="columnAmount">Valor</th>
+            <th class="columnType">Tipo</th>
+            <th class="columnAction"></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+</main>  
+</body>
+</html>
